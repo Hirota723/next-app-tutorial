@@ -4,7 +4,7 @@ import styles from "@/styles/Home.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function MainVisual() {
+export function MainVisual() {
   return (
     <>
       <div className={styles.center}>
