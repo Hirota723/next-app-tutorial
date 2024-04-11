@@ -1,11 +1,5 @@
 import Head from "next/head";
-import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
-import { Links } from "@/components/Links";
-import { Header } from "@/components/Header";
-import { MainVisual } from "@/components/MainVisual";
-
-const inter = Inter({ subsets: ["latin"] });
+import { Main } from "@/components/Main"; // Changed import from "next/document" to "@/components/Main"
 
 export default function Home() {
   return (
@@ -16,13 +10,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`${styles.main} ${inter.className}`}>
-        <Header page="index" />
 
-        <MainVisual />
-
-        <Links />
-      </main>
+      <Main page="index" />
     </>
   );
 }
