@@ -1,16 +1,14 @@
-import styles from "@/styles/Home.module.css";
-import { HeadLine } from "@/components/HeadLine";
-import { Logo } from "./Logo";
+import Link from "next/link";
 
-export function Header(props) {
+export function Header() {
   return (
     <>
-      <div className={styles.description}>
-        <HeadLine page={props.page}>
-          <code className={styles.code}>pages/{props.page}.js</code>
-        </HeadLine>
-        <Logo />
-      </div>
+      <Link href="/" legacyBehavior>
+        <a>Index</a>
+      </Link>
+      <Link href="./about" legacyBehavior>
+        <a>About</a>
+      </Link>
     </>
   );
 }
