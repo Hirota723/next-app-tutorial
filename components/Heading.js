@@ -1,4 +1,4 @@
-import styles from "@/styles/Home.module.css";
+import styles from "./Heading.module.css";
 import { HeadLine } from "@/components/HeadLine";
 import { Logo } from "./Logo";
 
