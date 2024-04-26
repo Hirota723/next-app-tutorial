@@ -1,14 +1,15 @@
 import Link from "next/link";
+import styles from "./Header.module.css";
 
 export function Header() {
   return (
-    <>
+    <header className={styles.header}>
       <Link href="/" legacyBehavior>
-        <a>Index</a>
+        <a className={styles.anchor}>Index</a>
       </Link>
       <Link href="./about" legacyBehavior>
-        <a>About</a>
+        <a className={styles.anchor}>About</a>
       </Link>
-    </>
+    </header>
   );
 }
