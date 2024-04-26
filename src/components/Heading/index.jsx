@@ -1,6 +1,6 @@
 import styles from "./Heading.module.css";
-import { HeadLine } from "./HeadLine";
-import { Logo } from "./Logo";
+import { HeadLine } from "../HeadLine";
+import { Logo } from "../Logo";
 
 export function Heading(props) {
   return (
