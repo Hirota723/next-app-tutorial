@@ -2,15 +2,17 @@ import Head from "next/head";
 import styles from "@/src/styles/Home.module.css";
 import { Main } from "@/src/components/Main"; // Changed import from "next/document" to "@/components/Main"
 import { Header } from "@/src/components/Header";
-import { useCounter } from "../hooks/useCounter";
-import { useInputArray } from "../hooks/useInputArray";
-import { useBgLightBlue } from "../hooks/useBgLightBlue";
 
-export default function About() {
-  const { count, isShow, handleClick, handleDisplay } = useCounter();
-  const { text, array, handleChange, handleAdd } = useInputArray();
-  useBgLightBlue();
-
+export default function About({
+  count,
+  isShow,
+  handleClick,
+  handleDisplay,
+  text,
+  array,
+  handleChange,
+  handleAdd,
+}) {
   return (
     <div className={styles.main}>
       <Head>
