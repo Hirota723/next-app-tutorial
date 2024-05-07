@@ -9,6 +9,9 @@ export function Heading(props) {
         <HeadLine page={props.page}>
           <code className={styles.code}>pages/{props.page}.js</code>
         </HeadLine>
+
+        <button onClick={props.handleReduce}>減らす</button>
+
         <Logo />
       </div>
     </>
