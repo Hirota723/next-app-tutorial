@@ -2,7 +2,7 @@ import styles from "./Heading.module.css";
 import { HeadLine } from "../HeadLine";
 import { Logo } from "../Logo";
 
-export function Heading(props) {
+export const Heading = (props) => {
   return (
     <>
       <div className={styles.description}>
@@ -16,4 +16,4 @@ export function Heading(props) {
       </div>
     </>
   );
-}
+};

@@ -3,12 +3,12 @@ import styles from "./Links.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export function Links({ items, handleReduce }) {
+export const Links = (props) => {
   return (
     <>
       <main className={`${styles.main} ${inter.className}`}>
         <div className={styles.grid}>
-          {items.map((item) => {
+          {props.map((item) => {
             return (
               <a
                 key={item.href}
@@ -28,4 +28,4 @@ export function Links({ items, handleReduce }) {
       </main>
     </>
   );
-}
+};

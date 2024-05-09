@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./MainVisual.module.css";
 
-export function MainVisual() {
+export const MainVisual = () => {
   return (
     <>
       <div className={styles.center}>
@@ -16,4 +16,4 @@ export function MainVisual() {
       </div>
     </>
   );
-}
+};

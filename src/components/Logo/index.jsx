@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./Logo.module.css";
 
-export function Logo() {
+export const Logo = () => {
   return (
     <>
       <div>
@@ -23,4 +23,4 @@ export function Logo() {
       </div>
     </>
   );
-}
+};
