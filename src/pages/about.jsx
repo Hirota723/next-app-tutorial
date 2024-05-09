@@ -4,7 +4,7 @@ import { Main } from "@/src/components/Main"; // Changed import from "next/docum
 import { Header } from "@/src/components/Header";
 
 export default function About({
-  count,
+  doubleCount,
   isShow,
   handleClick,
   handleDisplay,
@@ -21,17 +21,16 @@ export default function About({
 
       <Header />
 
-      {isShow ? <h1>{count}</h1> : null}
-
       <button onClick={handleClick}>ボタン</button>
       <button onClick={handleDisplay}>{isShow ? "非表示" : "表示"}</button>
+      {isShow ? <h2>{doubleCount}</h2> : null}
       <input type="text" value={text} onChange={handleChange} />
       <button onClick={handleAdd}>追加</button>
-      <ul>
+      <ol>
         {array.map((item) => {
           return <li key={item}>{item}</li>;
         })}
-      </ul>
+      </ol>
 
       <Main page="about" />
     </div>
