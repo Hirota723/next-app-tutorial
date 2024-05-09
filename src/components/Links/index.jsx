@@ -8,7 +8,7 @@ export const Links = (props) => {
     <>
       <main className={`${styles.main} ${inter.className}`}>
         <div className={styles.grid}>
-          {props.map((item) => {
+          {props.items.map((item) => {
             return (
               <a
                 key={item.href}
